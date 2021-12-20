@@ -1,0 +1,110 @@
+
+.letratitulo{
+	font-size: 60px;
+	font-family: Roman;
+	text-align: center;
+		width:99%;
+		color: yellow;
+		border:2px solid green;
+		background-color: red;
+			position: relative;
+				top:150px;
+}
+.puerta1{
+	width:  200px;
+	height:  300px;
+	background: #652902;
+	border-style: solid;
+		position: relative;
+			left:542px;
+			top:244px;
+			z-index:1;
+				animation-name: puertaA;
+				animation-duration: 6s; 
+}
+.pomo1{
+	border:2px solid #DECD00;
+	border-radius: 27px;
+	height:50px;
+	width:50px;
+	background-color:yellow;
+		position: absolute;
+		top:120px;
+		left:130px;
+}
+.pomo2{
+	border:2px solid #DECD00;
+	border-radius: 27px;
+	height:50px;
+	width:50px;
+	background-color:yellow;
+		position: absolute;
+		top:120px;
+		left:15px;
+}
+.puerta2{
+	width:  200px;
+	height:  300px;
+	background: #652902;
+	border-style: solid;
+		position: relative;
+		left:1140px;
+		bottom: 62px; 
+			z-index:1;
+				animation-name: puertaB;
+				animation-duration: 6s;  
+				
+}
+.rima{
+	border:3px solid black;
+	width: 400px;
+	height: 300px;
+	background-color: #dEdEcF;
+		position: absolute;
+			top:325px;
+			left:750px;
+			z-index: 0;
+}
+.trineo{
+	position: relative;
+		bottom: 870px;
+		right: 50px;
+		transform: rotateY(180deg);
+			animation-name: trineo;
+			animation-duration: 12s;
+}
+body{
+	background-repeat: no-repeat; 
+	background-size: cover;
+	overflow: hidden;
+}
+@keyframes puertaA{
+	0%{
+		left:742px;
+		top:244px;
+	}
+	100%{
+		left:542px;
+			top:244px;
+	}
+}
+@keyframes puertaB{
+	0%{
+		left:946px;
+		bottom:62px; 
+	}
+	100%{
+		left:1140px;
+		bottom: 62px;
+	}
+}
+@keyframes trineo{
+	0%{
+		bottom: 870px;
+		right: 1350px;
+	}
+	100%{
+		bottom: 870px;
+		right: 50px;
+	}
+}
